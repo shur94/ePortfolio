@@ -29,7 +29,11 @@ With given feedback and grade, the initial design lack of completed tasks.
 Considering the quality of findings, the expertise to a certain level is not achieved, and it clearly needs to improve.
 
 #### 2. Understanding
+Even though I cited and referred some external knowledge, it cannot be confidently said that those were correctly implemented in my work.
 
+Since I lack fundamental knowledge, which partially were satisfied through previous modules, I may needed more time and effort to follow up such scarcity.
+
+However, I tried to simplify the whole process, which eventually became a final design that can be compiled as python codes.
 
 ### System Implementation
 https://github.com/shur94/ePortfolio_/tree/main/System%20Design%20(Week%207)
