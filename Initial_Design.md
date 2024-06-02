@@ -1,80 +1,45 @@
-# ePortfolio_
-This is my portfolio of learning outcome from Object Oriented Programming based on submitted assignments. 
+# Initial Design
 
-## Driverless Car System Implementation
+## Implementation of Software to Support Operation of a Driverless Car
 
-This assignment focuses on implementing the software components necessary to support the operation of a driverless car, as outlined in the provided class diagram from system design, however, it has been amended from the initial version.
+In our modern era, the adoption of Artificial Intelligence (AI) has propelled significant advancements in various domains, including the automation of labour-intensive tasks. One notable application of AI technology is in the development of driverless cars, which represents a significant milestone in automotive innovation. This assignment focuses on implementing the software components necessary to support the operation of a driverless car, as outlined in the provided class diagram from system design as below.
+ 
+![image](https://github.com/shur94/ePortfolio_/assets/152515871/f5ca10fb-e461-4fe1-8183-985df7309dad)
 
-![image](https://github.com/shur94/ePortfolio/assets/152515871/726b51ad-3538-4d66-a3d3-2b0b461a1cf7)
 
-This README includes the implementation of software components necessary to support the operation of a driverless car. 
+## Implementation Approach
+The implementation of the driverless car software will involve creating Python classes corresponding to the defined class diagram. 
 
-Below, you'll find a description of the code and the testing code specifically for the system along with instructions on how to execute the code.
+Each class will be responsible for specific functionalities such as capturing images, detecting obstacles, making decisions, and storing data. The code will be organised, well-commented, and adhere to the best coding practices to ensure readability and maintainability.
 
-### Driverless System
+## Data Structure Choice
+Additionally, to enhance the efficiency of processing the data collected during the operation, the following data structures are chosen in this implementation: 
 
-driverless_system.py
-It consists of several classes that simulate the functionality of a driverless car system. Here's an overview of each class:
+#### Lists: 
 
-#### DriverlessSystem:
-This class represents the main system controlling the driverless car.
+Lists are utilised to store collections of data, such as images captured by the camera and raw data collected from various sensors. 
 
-It has methods to make decisions, detect obstacles, and store data.
+#### Dictionaries: 
 
-The make_decision method decides whether to proceed or halt based on obstacle detection.
+Dictionaries are chosen to store key-value pairs, facilitating efficient lookup and retrieval of data. Its characteristic will be useful for organising and accessing data related to obstacle detection results, decision-making outcomes, and other system parameters.
 
-The detect_obstacle method simulates the detection of obstacles using a camera. 
+#### Stacks and Queues: 
 
-To avoid any doubt, it will need to be replaced once being implemented in the real system.
+While not directly utilised in this implementation, stacks and queues could be integrated as needed for specific functionalities. 
 
-The store_data method stores captured image data in the Data class.
+The choice of these data structures is based on their suitability for handling the diverse data types and requirements of the driverless car software.
 
-#### Camera:
-This class represents the camera module of the driverless car.
+## Testing Approach
 
-It has a method capture_image that simulates capturing an image. 
+The implemented code will be thoroughly tested to ensure its correctness and functionality. 
 
-To avoid any doubt, it will need to be replaced once being implemented in the real system.
+Testing will include unit tests for individual methods as well as integration tests to verify the interactions between different components.
 
-For demonstration purposes, it returns a placeholder image.
+Python's assert statement will be used for automated testing, along with additional testing techniques as deemed necessary.
 
-#### Data:
-This class represents the data storage module of the driverless car.
+## Conclusion
 
-It has a method store_data to store captured image data.
+In conclusion, this assignment aims to implement the software components required to support the operation of a driverless car. 
 
-#### Obstacle:
-This class represents the obstacle detection module of the driverless car.
+By adhering to the provided class diagram, choosing appropriate data structures, and following best coding practices, the implemented software is expected to effectively capture images, detect obstacles, make decisions, and store data, thereby contributing to the advancement of driverless car technology.
 
-It has an attribute detected to simulate obstacle detection.
-
-#### Decision:
-This class represents the decision-making module of the driverless car.
-
-It has an attribute result to store the decision (proceed or halt).
-
-test_driverless_system.py
-
-### Testing Code
-The testing code uses the unittest(Python, n.d.) framework to test the functionality of the driverless car system. 
-
-Here's a description of the test cases:
-
-#### test_make_decision: 
-Tests the make_decision method of the DriverlessSystem class. 
-
-It verifies whether the system makes the correct decision based on obstacle detection.
-
-#### test_detect_obstacle: 
-Tests the detect_obstacle method of the DriverlessSystem class. 
-
-It ensures that the system detects obstacles correctly.
-
-#### test_store_data:
-Tests the store_data method of the DriverlessSystem class. 
-
-It checks whether the system stores data correctly after capturing an image.
- 
-
-### References
-Python (n.d.). unittest — Unit testing framework — Python 3.8.2 documentation. [online] docs.python.org. Available at: https://docs.python.org/3/library/unittest.html. 
