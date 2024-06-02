@@ -4,7 +4,7 @@ This is a portfolio to present my learning outcomes from Object Oriented Program
 </br>
 
 ## System Design
->https://github.com/shur94/ePortfolio_/tree/main/Implementation%20(Week%2011)
+>https://github.com/shur94/ePortfolio/tree/main/Implementation%20(Week%2011)
 
 Assignment was to design a software to support driverless car.
 
@@ -36,7 +36,7 @@ Since I lack fundamental knowledge, which partially were satisfied through previ
 However, I tried to simplify the whole process, which eventually became a final design that can be compiled as python codes.
 
 ### System Implementation
-https://github.com/shur94/ePortfolio_/tree/main/System%20Design%20(Week%207)
+https://github.com/shur94/ePortfolio/tree/main/System%20Design%20(Week%207)
 
 Next assignment was to build a software to support driverless car, based on system design that was previously submitted.
 
@@ -47,37 +47,49 @@ Again, with references from various materials, following two codings are created
 
 #### 1. driverless_system.py
 
-It consists of several classes that simulate the functionality of a driverless car system with classes as below:
+It consists of several classes that simulate the functionality of a driverless car system with classes, of which details can be accessed via README of the project:
 
 #### DriverlessSystem:
 This class represents the main system controlling the driverless car.
-
-It has methods to make decisions, detect obstacles, and store data.
-
-- The make_decision method decides whether to proceed or halt based on obstacle detection.
-
-- The detect_obstacle method simulates the detection of obstacles using a camera.
-
-- The store_data method stores captured image data in the Data class.
 
 #### Camera:
 
 This class represents the camera module of the driverless car.
 
-- The capture_image method simulates capturing an image.
->For demonstration purposes, it returns a placeholder image.
-
 #### Data:
 This class represents the data storage module of the driverless car.
-
-- The store_data method to store captured image data.
 
 #### Obstacle:
 This class represents the obstacle detection module of the driverless car.
 
-- An attribute detected to simulate obstacle detection.
-
 #### Decision:
 This class represents the decision-making module of the driverless car.
 
-- An attribute result to store the decision (proceed or halt).
+
+#### 2. test_driverless_system.py
+
+It consists the testing code using the unittest(Python, n.d.) framework to test the functionality of the driverless car system.
+
+Similarly, details can be accessed via README of this project
+
+#### test_make_decision: 
+Tests the make_decision method of the DriverlessSystem class. 
+
+#### test_detect_obstacle: 
+Tests the detect_obstacle method of the DriverlessSystem class.
+
+#### test_store_data: 
+Tests the store_data method of the DriverlessSystem class.
+
+### Self assessment
+#### 1. Overall
+Although the design lacked essential details, the final outcome does work as I intended.
+
+The final code is very simplified with very basic logical decisions for the car to decide, however, it provides satisfying decision making process with the given situation of simulating the image.
+
+#### 2. Understanding
+Even though I cited and referred some external knowledge, it cannot be confidently said that those were correctly implemented in my work.
+
+Since I lack fundamental knowledge, which partially were satisfied through previous modules, I may needed more time and effort to follow up such scarcity.
+
+However, I tried to simplify the whole process, which eventually became a final design that can be compiled as python codes.
