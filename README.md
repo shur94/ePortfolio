@@ -37,3 +37,47 @@ However, I tried to simplify the whole process, which eventually became a final 
 
 ### System Implementation
 https://github.com/shur94/ePortfolio_/tree/main/System%20Design%20(Week%207)
+
+Next assignment was to build a software to support driverless car, based on system design that was previously submitted.
+
+As instructed, I have completed coding process (python) for a software.
+
+</br>
+Again, with references from various materials, following two codings are created:
+
+#### 1. driverless_system.py
+
+It consists of several classes that simulate the functionality of a driverless car system with classes as below:
+
+#### DriverlessSystem:
+This class represents the main system controlling the driverless car.
+
+It has methods to make decisions, detect obstacles, and store data.
+
+- The make_decision method decides whether to proceed or halt based on obstacle detection.
+
+- The detect_obstacle method simulates the detection of obstacles using a camera.
+
+- The store_data method stores captured image data in the Data class.
+
+#### Camera:
+
+This class represents the camera module of the driverless car.
+
+- The capture_image method simulates capturing an image.
+>For demonstration purposes, it returns a placeholder image.
+
+#### Data:
+This class represents the data storage module of the driverless car.
+
+- The store_data method to store captured image data.
+
+#### Obstacle:
+This class represents the obstacle detection module of the driverless car.
+
+- An attribute detected to simulate obstacle detection.
+
+#### Decision:
+This class represents the decision-making module of the driverless car.
+
+- An attribute result to store the decision (proceed or halt).
